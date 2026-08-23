@@ -202,7 +202,175 @@ function App() {
 
   </div>
 </section>
+{/* Projects Section */}
+<section id="projects" className="projects-section">
+  <div className="section-heading">
+    <p>MY PROJECTS</p>
+    <h2>Things I've built.</h2>
+  </div>
 
+  <div className="projects-grid">
+
+    {/* Project 1 */}
+    <article className="project-card featured-project">
+      <div className="project-top">
+        <span className="project-number">01</span>
+        <span className="project-type">AI / ML</span>
+      </div>
+
+      <h3>UPI Shield</h3>
+
+      <p>
+        An intelligent fraud detection system designed to identify
+        suspicious digital payment activity and protect users from
+        common UPI scams.
+      </p>
+
+      <ul className="project-features">
+        <li>SMS scam detection using machine learning</li>
+        <li>UPI ID and QR code verification</li>
+        <li>Receipt text extraction using OCR</li>
+        <li>KYC phishing detection</li>
+      </ul>
+
+      <div className="project-tech">
+        <span>React</span>
+        <span>FastAPI</span>
+        <span>Python</span>
+        <span>Scikit-learn</span>
+        <span>OpenCV</span>
+      </div>
+    </article>
+
+
+    {/* Project 2 */}
+    <article className="project-card">
+      <div className="project-top">
+        <span className="project-number">02</span>
+        <span className="project-type">AI / ML</span>
+      </div>
+
+      <h3>FarmEye</h3>
+
+      <p>
+        An AI-driven livestock health assistance system that helps
+        identify cattle breeds and provides disease prediction and
+        veterinary information.
+      </p>
+
+      <ul className="project-features">
+        <li>Cattle breed identification using CNN</li>
+        <li>Symptom-based disease prediction</li>
+        <li>Disease information module</li>
+        <li>Veterinary locator</li>
+      </ul>
+
+      <div className="project-tech">
+        <span>Python</span>
+        <span>PyTorch</span>
+        <span>CNN</span>
+        <span>Flask</span>
+      </div>
+    </article>
+
+
+    {/* Project 3 */}
+    <article className="project-card">
+      <div className="project-top">
+        <span className="project-number">03</span>
+        <span className="project-type">FULL STACK</span>
+      </div>
+
+      <h3>Food Rescue App</h3>
+
+      <p>
+        A full-stack web application that connects restaurants with
+        people or organizations to help reduce food waste by
+        redistributing surplus food.
+      </p>
+
+      <ul className="project-features">
+        <li>Restaurant food listing</li>
+        <li>Food availability management</li>
+        <li>REST API integration</li>
+        <li>Database-backed application</li>
+      </ul>
+
+      <div className="project-tech">
+        <span>React</span>
+        <span>Node.js</span>
+        <span>Express</span>
+        <span>MongoDB</span>
+      </div>
+    </article>
+
+
+    {/* Project 4 */}
+    <article className="project-card">
+      <div className="project-top">
+        <span className="project-number">04</span>
+        <span className="project-type">BACKEND</span>
+      </div>
+
+      <h3>Tuition Fee Reminder</h3>
+
+      <p>
+        A web application designed to help manage student tuition
+        fee information and provide reminders for upcoming payments.
+      </p>
+
+      <ul className="project-features">
+        <li>Student fee management</li>
+        <li>Payment tracking</li>
+        <li>Reminder functionality</li>
+        <li>Database integration</li>
+      </ul>
+
+      <div className="project-tech">
+        <span>Spring Boot</span>
+        <span>Java</span>
+        <span>MySQL</span>
+      </div>
+    </article>
+
+  </div>
+</section>
+{/* Education Section */}
+<section id="education" className="education-section">
+  <div className="section-heading">
+    <p>EDUCATION</p>
+    <h2>My academic journey.</h2>
+  </div>
+
+  <div className="education-list">
+    <div className="education-card">
+      <div className="education-year">2026</div>
+
+      <div>
+        <h3>Master of Computer Applications (MCA)</h3>
+        <h4>NMAM Institute of Technology, Nitte</h4>
+        <p>
+          Building a strong foundation in software development,
+          artificial intelligence, machine learning, databases,
+          and application development.
+        </p>
+      </div>
+    </div>
+
+    <div className="education-card">
+      <div className="education-year">2024</div>
+
+      <div>
+        <h3>Bachelor of Computer Applications (BCA)</h3>
+        <h4>ALVA'S College, Moodbidri</h4>
+        <p>
+          Developed foundational knowledge in programming,
+          databases, web development, and computer applications.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
     </div>
   );
 }
