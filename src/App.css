@@ -1711,3 +1711,515 @@ a {
   }
 
 }
+/* =========================================
+   PROJECTS PAGE
+========================================= */
+
+.projects-page {
+  min-height: 100vh;
+
+  padding:
+    105px
+    5%
+    60px;
+
+  position: relative;
+
+  overflow-y: auto;
+
+  background:
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(139, 92, 246, 0.14),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 90% 75%,
+      rgba(192, 92, 255, 0.12),
+      transparent 25%
+    ),
+    #080613;
+}
+
+
+/* Stars */
+
+.projects-page::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  background-image:
+    radial-gradient(
+      circle,
+      rgba(255,255,255,0.7) 1px,
+      transparent 1px
+    ),
+    radial-gradient(
+      circle,
+      rgba(168,85,247,0.5) 1px,
+      transparent 1px
+    );
+
+  background-size:
+    150px 150px,
+    230px 230px;
+
+  background-position:
+    30px 20px,
+    100px 80px;
+
+  opacity: 0.35;
+}
+
+
+/* Header */
+
+.projects-header {
+  position: relative;
+
+  z-index: 1;
+
+  text-align: center;
+
+  max-width: 750px;
+
+  margin:
+    0 auto
+    45px;
+}
+
+.projects-header > p:first-child {
+  color: #c05cff;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 4px;
+
+  margin-bottom: 10px;
+}
+
+.projects-header h1 {
+  font-size:
+    clamp(38px, 5vw, 60px);
+
+  line-height: 1.1;
+
+  margin: 0;
+}
+
+.projects-header h1 span {
+  color: #c05cff;
+
+  text-shadow:
+    0 0 15px
+    rgba(192, 92, 255, 0.5),
+
+    0 0 35px
+    rgba(192, 92, 255, 0.2);
+}
+
+.projects-line {
+  width: 180px;
+
+  height: 2px;
+
+  margin:
+    18px auto;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      #c05cff,
+      transparent
+    );
+
+  box-shadow:
+    0 0 12px
+    #c05cff;
+}
+
+.projects-subtitle {
+  color: #a9a3b8;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   PROJECT GRID
+========================================= */
+
+.projects-grid {
+  position: relative;
+
+  z-index: 1;
+
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 28px;
+}
+
+
+/* =========================================
+   PROJECT CARD
+========================================= */
+
+.project-card {
+  overflow: hidden;
+
+  border:
+    1px solid
+    rgba(192, 92, 255, 0.35);
+
+  border-radius: 14px;
+
+  background:
+    rgba(13, 9, 25, 0.85);
+
+  box-shadow:
+    0 0 20px
+    rgba(139, 92, 246, 0.05);
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.project-card:hover {
+  transform:
+    translateY(-8px);
+
+  border-color:
+    rgba(192, 92, 255, 0.85);
+
+  box-shadow:
+    0 0 18px
+    rgba(192, 92, 255, 0.25),
+
+    0 20px 50px
+    rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================================
+   PROJECT PREVIEW
+========================================= */
+
+.project-preview {
+  height: 230px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  border-bottom:
+    1px solid
+    rgba(192, 92, 255, 0.2);
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(139, 92, 246, 0.2),
+      transparent 45%
+    ),
+    #100b1d;
+}
+
+
+/* Grid inside preview */
+
+.project-preview::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(192, 92, 255, 0.06) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(192, 92, 255, 0.06) 1px,
+      transparent 1px
+    );
+
+  background-size:
+    30px 30px;
+
+  opacity: 0.5;
+}
+
+
+/* Glow */
+
+.preview-glow {
+  position: absolute;
+
+  width: 180px;
+
+  height: 180px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(168, 85, 247, 0.2);
+
+  filter: blur(50px);
+}
+
+
+/* Preview content */
+
+.preview-content {
+  position: relative;
+
+  z-index: 1;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.preview-number {
+  position: absolute;
+
+  top: -70px;
+
+  right: -120px;
+
+  color:
+    rgba(192, 92, 255, 0.4);
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+.preview-icon {
+  width: 82px;
+
+  height: 82px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border:
+    1px solid
+    rgba(192, 92, 255, 0.55);
+
+  border-radius: 20px;
+
+  background:
+    rgba(87, 28, 130, 0.18);
+
+  font-size: 40px;
+
+  box-shadow:
+    0 0 25px
+    rgba(192, 92, 255, 0.15);
+}
+
+.preview-label {
+  color: #a99fb5;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+
+/* =========================================
+   PROJECT INFORMATION
+========================================= */
+
+.project-info {
+  padding: 28px;
+}
+
+.project-title-row {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 14px;
+}
+
+.project-title-row h2 {
+  font-size: 24px;
+
+  margin: 0;
+
+  color: #f4eff9;
+}
+
+.project-type {
+  flex-shrink: 0;
+
+  padding:
+    6px
+    9px;
+
+  border-radius: 5px;
+
+  color: #c05cff;
+
+  background:
+    rgba(192, 92, 255, 0.08);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.project-info > p {
+  color: #9e97ac;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+
+  min-height: 76px;
+
+  margin-bottom: 20px;
+}
+
+
+/* =========================================
+   TECHNOLOGY TAGS
+========================================= */
+
+.project-tech {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+}
+
+.project-tech span {
+  padding:
+    7px
+    11px;
+
+  border:
+    1px solid
+    rgba(192, 92, 255, 0.22);
+
+  border-radius: 20px;
+
+  color: #cfc8d8;
+
+  background:
+    rgba(25, 17, 37, 0.8);
+
+  font-size: 10px;
+
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.project-card:hover
+.project-tech span {
+  border-color:
+    rgba(192, 92, 255, 0.4);
+
+  color: #e1b9ff;
+}
+
+
+/* =========================================
+   PROJECT RESPONSIVE
+========================================= */
+
+@media (max-width: 850px) {
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-preview {
+    height: 220px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .projects-page {
+    padding:
+      95px
+      5%
+      40px;
+  }
+
+  .projects-header {
+    margin-bottom: 30px;
+  }
+
+  .projects-header h1 {
+    font-size: 38px;
+  }
+
+  .projects-subtitle {
+    font-size: 13px;
+  }
+
+  .project-preview {
+    height: 190px;
+  }
+
+  .project-info {
+    padding: 22px;
+  }
+
+  .project-title-row {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+}

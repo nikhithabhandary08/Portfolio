@@ -222,7 +222,7 @@ function App() {
             </h2>
 
             <p className="hero-description">
-              MCA student passionate about building practical
+              MCA Graduate passionate about building practical
               software solutions using AI/ML, full-stack development,
               and modern technologies.
             </p>
@@ -287,7 +287,7 @@ function App() {
             <div className="about-text">
 
               <p>
-                I am an MCA student at NMAM Institute of Technology,
+                I am an MCA Graduate at NMAM Institute of Technology,
                 Nitte, with a strong interest in software development,
                 artificial intelligence, and machine learning.
               </p>
@@ -581,213 +581,223 @@ function App() {
           PROJECTS
       ===================================== */}
 
-      {activeSection === "projects" && (
-        <section className="page-section projects-section">
+     
+{activeSection === "projects" && (
+  <section className="page-section projects-page">
 
-          <div className="section-heading">
+    {/* Header */}
+    <div className="projects-header">
+      <p>MY WORK</p>
 
-            <p>MY PROJECTS</p>
+      <h1>
+        Selected <span>Projects</span>
+      </h1>
 
-            <h2>
-              Things I've built.
-            </h2>
+      <div className="projects-line"></div>
 
+      <p className="projects-subtitle">
+        A collection of projects I have built while exploring
+        software development, AI, and machine learning.
+      </p>
+    </div>
+
+
+    {/* Project Cards */}
+    <div className="projects-grid">
+
+
+      {/* UPI Shield */}
+      <article className="project-card">
+
+        <div className="project-preview">
+          <div className="preview-glow"></div>
+
+          <div className="preview-content">
+            <span className="preview-number">01</span>
+
+            <div className="preview-icon">
+              🛡️
+            </div>
+
+            <span className="preview-label">
+              AI / ML PROJECT
+            </span>
+          </div>
+        </div>
+
+        <div className="project-info">
+
+          <div className="project-title-row">
+            <h2>UPI Shield</h2>
+
+            <span className="project-type">
+              AI / ML
+            </span>
           </div>
 
-          <div className="projects-grid">
+          <p>
+            Intelligent fraud detection system designed to
+            identify suspicious digital payment activity and
+            protect users from common UPI scams.
+          </p>
 
-            <article className="project-card featured-project">
-
-              <div className="project-top">
-                <span className="project-number">
-                  01
-                </span>
-
-                <span className="project-type">
-                  AI / ML
-                </span>
-              </div>
-
-              <h3>
-                UPI Shield
-              </h3>
-
-              <p>
-                An intelligent fraud detection system designed to
-                identify suspicious digital payment activity and
-                protect users from common UPI scams.
-              </p>
-
-              <ul className="project-features">
-                <li>
-                  SMS scam detection using machine learning
-                </li>
-                <li>
-                  UPI ID and QR code verification
-                </li>
-                <li>
-                  Receipt text extraction using OCR
-                </li>
-                <li>
-                  KYC phishing detection
-                </li>
-              </ul>
-
-              <div className="project-tech">
-                <span>React</span>
-                <span>FastAPI</span>
-                <span>Python</span>
-                <span>Scikit-learn</span>
-                <span>OpenCV</span>
-              </div>
-
-            </article>
-
-
-            <article className="project-card">
-
-              <div className="project-top">
-                <span className="project-number">
-                  02
-                </span>
-
-                <span className="project-type">
-                  AI / ML
-                </span>
-              </div>
-
-              <h3>
-                FarmEye
-              </h3>
-
-              <p>
-                An AI-driven livestock health assistance system that
-                helps identify cattle breeds and provides disease
-                prediction and veterinary information.
-              </p>
-
-              <ul className="project-features">
-                <li>
-                  Cattle breed identification using CNN
-                </li>
-                <li>
-                  Symptom-based disease prediction
-                </li>
-                <li>
-                  Disease information module
-                </li>
-                <li>
-                  Veterinary locator
-                </li>
-              </ul>
-
-              <div className="project-tech">
-                <span>Python</span>
-                <span>PyTorch</span>
-                <span>CNN</span>
-                <span>Flask</span>
-              </div>
-
-            </article>
-
-
-            <article className="project-card">
-
-              <div className="project-top">
-                <span className="project-number">
-                  03
-                </span>
-
-                <span className="project-type">
-                  FULL STACK
-                </span>
-              </div>
-
-              <h3>
-                Food Rescue App
-              </h3>
-
-              <p>
-                A full-stack web application that connects restaurants
-                with people or organizations to help reduce food waste.
-              </p>
-
-              <ul className="project-features">
-                <li>
-                  Restaurant food listing
-                </li>
-                <li>
-                  Food availability management
-                </li>
-                <li>
-                  REST API integration
-                </li>
-                <li>
-                  Database-backed application
-                </li>
-              </ul>
-
-              <div className="project-tech">
-                <span>React</span>
-                <span>Node.js</span>
-                <span>Express</span>
-                <span>MongoDB</span>
-              </div>
-
-            </article>
-
-
-            <article className="project-card">
-
-              <div className="project-top">
-                <span className="project-number">
-                  04
-                </span>
-
-                <span className="project-type">
-                  BACKEND
-                </span>
-              </div>
-
-              <h3>
-                Tuition Fee Reminder
-              </h3>
-
-              <p>
-                A web application designed to help manage student
-                tuition fee information and provide reminders for
-                upcoming payments.
-              </p>
-
-              <ul className="project-features">
-                <li>
-                  Student fee management
-                </li>
-                <li>
-                  Payment tracking
-                </li>
-                <li>
-                  Reminder functionality
-                </li>
-                <li>
-                  Database integration
-                </li>
-              </ul>
-
-              <div className="project-tech">
-                <span>Spring Boot</span>
-                <span>Java</span>
-                <span>MySQL</span>
-              </div>
-
-            </article>
-
+          <div className="project-tech">
+            <span>Python</span>
+            <span>React</span>
+            <span>FastAPI</span>
+            <span>Scikit-learn</span>
+            <span>OpenCV</span>
           </div>
 
-        </section>
-      )}
+        </div>
+
+      </article>
 
 
+      {/* FarmEye */}
+      <article className="project-card">
+
+        <div className="project-preview">
+          <div className="preview-glow"></div>
+
+          <div className="preview-content">
+            <span className="preview-number">02</span>
+
+            <div className="preview-icon">
+              🐄
+            </div>
+
+            <span className="preview-label">
+              AI / ML PROJECT
+            </span>
+          </div>
+        </div>
+
+        <div className="project-info">
+
+          <div className="project-title-row">
+            <h2>FarmEye</h2>
+
+            <span className="project-type">
+              AI / ML
+            </span>
+          </div>
+
+          <p>
+            AI-driven livestock health assistance system for
+            cattle breed identification, disease prediction,
+            disease information, and veterinary assistance.
+          </p>
+
+          <div className="project-tech">
+            <span>Python</span>
+            <span>PyTorch</span>
+            <span>CNN</span>
+            <span>Flask</span>
+          </div>
+
+        </div>
+
+      </article>
+
+
+      {/* Food Rescue */}
+      <article className="project-card">
+
+        <div className="project-preview">
+          <div className="preview-glow"></div>
+
+          <div className="preview-content">
+            <span className="preview-number">03</span>
+
+            <div className="preview-icon">
+              🍱
+            </div>
+
+            <span className="preview-label">
+              FULL STACK PROJECT
+            </span>
+          </div>
+        </div>
+
+        <div className="project-info">
+
+          <div className="project-title-row">
+            <h2>Food Rescue</h2>
+
+            <span className="project-type">
+              FULL STACK
+            </span>
+          </div>
+
+          <p>
+            Full-stack web application that helps reduce food
+            waste by connecting available restaurant food with
+            people or organizations who can use it.
+          </p>
+
+          <div className="project-tech">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>MongoDB</span>
+          </div>
+
+        </div>
+
+      </article>
+
+
+      {/* Tuition Fee Reminder */}
+      <article className="project-card">
+
+        <div className="project-preview">
+          <div className="preview-glow"></div>
+
+          <div className="preview-content">
+            <span className="preview-number">04</span>
+
+            <div className="preview-icon">
+              🎓
+            </div>
+
+            <span className="preview-label">
+              JAVA PROJECT
+            </span>
+          </div>
+        </div>
+
+        <div className="project-info">
+
+          <div className="project-title-row">
+            <h2>Tuition Fee Reminder</h2>
+
+            <span className="project-type">
+              BACKEND
+            </span>
+          </div>
+
+          <p>
+            Application designed to manage student tuition fee
+            information, track payments, and provide reminders
+            for upcoming fee deadlines.
+          </p>
+
+          <div className="project-tech">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>MySQL</span>
+          </div>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </section>
+)}
       {/* =====================================
           EDUCATION
       ===================================== */}
@@ -889,7 +899,11 @@ function App() {
 
             <div className="contact-links">
 
-              <a href="mailto:nikhithabhandary08@gmail.com">
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=nikhithabhandary08@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Email ↗
               </a>
 
