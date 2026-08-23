@@ -11,6 +11,7 @@ function App() {
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
+           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </div>
@@ -94,6 +95,114 @@ function App() {
           </div>
         </div>
       </section>
+            {/* Skills Section */}
+      <section id="skills" className="skills-section">
+        <div className="section-heading">
+          <p>MY SKILLS</p>
+          <h2>Technologies I work with.</h2>
+        </div>
+
+        <div className="skills-grid">
+          <div className="skill-card">
+            <div className="skill-number">01</div>
+            <h3>Programming</h3>
+            <p>Python, Java, C, JavaScript</p>
+          </div>
+
+          <div className="skill-card">
+            <div className="skill-number">02</div>
+            <h3>Web Development</h3>
+            <p>React, HTML, CSS, Flask, Django, Node.js</p>
+          </div>
+
+          <div className="skill-card">
+            <div className="skill-number">03</div>
+            <h3>AI / Machine Learning</h3>
+            <p>TensorFlow, PyTorch, Scikit-learn</p>
+          </div>
+
+          <div className="skill-card">
+            <div className="skill-number">04</div>
+            <h3>Databases</h3>
+            <p>MySQL, MongoDB, SQLite</p>
+          </div>
+
+          <div className="skill-card">
+            <div className="skill-number">05</div>
+            <h3>Development</h3>
+            <p>REST APIs, Backend Development, Database Design</p>
+          </div>
+
+          <div className="skill-card">
+            <div className="skill-number">06</div>
+            <h3>Tools</h3>
+            <p>Git, GitHub, Power BI, Tableau</p>
+          </div>
+        </div>
+      </section>
+      {/* Experience Section */}
+<section id="experience" className="experience-section">
+  <div className="section-heading">
+    <p>EXPERIENCE</p>
+    <h2>Where I gained practical experience.</h2>
+  </div>
+
+  <div className="experience-list">
+
+    <div className="experience-card">
+      <div className="experience-date">
+        2024
+      </div>
+
+      <div className="experience-details">
+        <h3>Web Developer Intern</h3>
+        <h4>Hash Infotech</h4>
+
+        <p>
+          Worked on responsive web application components using
+          HTML, CSS, JavaScript, and React.js. Gained practical
+          experience in frontend development, testing, debugging,
+          and improving application functionality.
+        </p>
+
+        <div className="experience-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>React.js</span>
+        </div>
+      </div>
+    </div>
+
+
+    <div className="experience-card">
+      <div className="experience-date">
+        2025
+      </div>
+
+      <div className="experience-details">
+        <h3>Full Stack Development Intern</h3>
+        <h4>Softionik</h4>
+
+        <p>
+          Worked on full-stack web development and gained practical
+          experience in building frontend interfaces, backend APIs,
+          database integration, and developing functional web
+          applications.
+        </p>
+
+        <div className="experience-tags">
+          <span>React</span>
+          <span>Node.js</span>
+          <span>Express</span>
+          <span>MongoDB</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
     </div>
   );
 }
